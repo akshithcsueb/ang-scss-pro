@@ -1,0 +1,22 @@
+<app-employee-details></app-employee-details>
+<p>employee-list works!</p>
+<!-- <p>{{ expectedProp?.title }}</p> -->
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.age }}</td>
+      <td>{{ employee.salary }}</td>
+    </tr>
+  </tbody>
+</table>
